@@ -90,7 +90,7 @@ Lets dig around the source code some more
 subl ./routes/api.js
 ```
 
-For the /login api call we can see that it takes in a couple of important function that need to be investigated. Let try with  validators.js
+For the /login api call we can see that it takes in a couple of important function that need to be investigated. Let try to investigate loginValidator function
 
 ![image](https://user-images.githubusercontent.com/32186957/101723474-5140f500-3ae7-11eb-91c9-76ec3e51b9d8.png)
 
