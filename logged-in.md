@@ -120,9 +120,16 @@ http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:41061/api/login
 
 We have a 401 unauthorized which shows that we are in the correct vectors here, is there a way to bypass the checks? 
 
+![image](https://user-images.githubusercontent.com/32186957/101723779-f1971980-3ae7-11eb-93a3-08ad06ab6275.png)
+
 Let try with some simple fuzzing,  empty payload 
 
+![image](https://user-images.githubusercontent.com/32186957/101723798-ffe53580-3ae7-11eb-8968-58690a9de36f.png)
+
 Didn't expect to get it success on one try. Lets check the /api/login and see what is happening underneath
+
+![image](https://user-images.githubusercontent.com/32186957/101723815-0a073400-3ae8-11eb-941c-13ed0f587270.png)
+
 
 
 loginValidator function checks for the existence of the username and password parameters which we already knows, 
