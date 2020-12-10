@@ -35,7 +35,7 @@ subl app.js
 ```
 
 I prefer sublime for simple editing, you can use any other command like gedit.  Here we can see that 
-for app.js to work, we would need the reoutes/api.js file. require in js works like import in python
+for app.js to work, we would need the routes/api.js file. require in js works like import in python
 
 ![image](https://user-images.githubusercontent.com/32186957/101722708-c7445c80-3ae5-11eb-9186-8bb1ce642f95.png)
 
