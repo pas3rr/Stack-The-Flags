@@ -75,10 +75,13 @@ This is the http get request for the correct call
 ```
 http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:41061/api/user/1
 ```
-
 Rather disappointing that it shows as null, however we can confirm that we are on the right track, if it's not showing not found. So lets try a few more value. 
 
+![image](https://user-images.githubusercontent.com/32186957/101723397-2b1b5500-3ae7-11eb-9c01-1e8598bb2ca7.png)
+
 Success !
+
+![image](https://user-images.githubusercontent.com/32186957/101723444-3ec6bb80-3ae7-11eb-9792-aec5d5ed4c02.png)
 
 
 Lets dig around the source code some more
@@ -89,12 +92,12 @@ subl ./routes/api.js
 
 For the /login api call we can see that it takes in a couple of important function that need to be investigated. Let try with  validators.js
 
+![image](https://user-images.githubusercontent.com/32186957/101723474-5140f500-3ae7-11eb-91c9-76ec3e51b9d8.png)
 
 ```
 grep -rn "loginValidator" .
 ```
-
-
+![image](https://user-images.githubusercontent.com/32186957/101723496-5d2cb700-3ae7-11eb-86b4-6496ea6ade58.png)
 
 ```
 subl ./middleswares/validators.js
@@ -103,6 +106,9 @@ subl ./middleswares/validators.js
 From the validators.js file we can see that the function loginValidator checks for two parameters here. 
 - username
 - password
+
+![image](https://user-images.githubusercontent.com/32186957/101723537-6d449680-3ae7-11eb-93f3-c76cd88d6939.png)
+
 
 This information is interesting for us to craft a burp request to see if we are on the correct vectors
 /api/login with a post request will be the URL to call the api
