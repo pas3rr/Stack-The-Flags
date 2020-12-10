@@ -137,13 +137,22 @@ loginValidator function checks for the existence of the username and password pa
 sendValidationErrors checks for if there is any errors and response with the error  object with a 400. Which we can see in burp if we 
 try to use a invalid parameters such as just username without password. 
 
-
+![image](https://user-images.githubusercontent.com/32186957/101723855-24411200-3ae8-11eb-9a90-f4917f125d33.png)
 
 localAuthenticator function is the last which we try to understand, basically it let you  authenticate using a username and password in your Node.js applications
 http://www.passportjs.org/packages/passport-local/
 
+![image](https://user-images.githubusercontent.com/32186957/101723886-3753e200-3ae8-11eb-8554-aa7ed219fdaa.png)
+
+
 Here we understand that the logic is that if there is any err, it will return a 401 not authorized message which we see earlier. So right here at the end of all the 
 passed in function, we dont see any sort of validation for the data type of the parameter passed. This is likely the reason why we get that flag in the first place.
+
+![image](https://user-images.githubusercontent.com/32186957/101723926-4dfa3900-3ae8-11eb-930b-4f5d1f760a36.png)
+![image](https://user-images.githubusercontent.com/32186957/101723947-58b4ce00-3ae8-11eb-8d30-5075c90d7300.png)
+
+
+
 This is a pretty fun one and helps me to better prepare for my OSWE exam! 
 
 
