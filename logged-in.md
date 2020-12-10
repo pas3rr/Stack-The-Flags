@@ -64,19 +64,17 @@ https://stackoverflow.com/questions/32313553/what-does-a-colon-mean-on-a-directo
 
 ![image](https://user-images.githubusercontent.com/32186957/101723038-6ec18f00-3ae6-11eb-89a9-8f746068db72.png)
 
-so that it will roughly translate  to http://xxx/user/1 if the user id is 1
+so that it will roughly translate to http://xxx/user/1 if the user id is 1
+
+
+however we still need one more level of directory shown by the code earlier in app.js
+which translate to /api/user/:userId
 
 ![image](https://user-images.githubusercontent.com/32186957/101723071-8436b900-3ae6-11eb-8d3f-09e8feddba12.png)
-
-
-
 
 ```
 http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:41061/api/user/1
 ```
-
-however we still need one more level of directory shown by the code earlier in app.js
-which translate to /api/user/:userId
 
 Rather disappointing that it shows as null, however we can confirm that we are on the right track, if it's not showing not found. So lets try a few more value. 
 
