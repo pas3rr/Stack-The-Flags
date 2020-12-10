@@ -1,18 +1,15 @@
 # Stack-The-Flags
 ## Writeup for the web category - logged in 
 
-DESCRIPTION
+## DESCRIPTION
 It looks like COViD's mobile application is connecting to this API! Fortunately, our agents stole part of the source code. Can you find a way to log in?
 
-COMMENT
+## COMMENT
 As this looks like a challenge for source code review, we will try to adapt some of the OSWE methodology in reviewing the application flaws. 
 
-Skill Required 
+## Skill Required 
 JS basic syntax
  API endpoint 
-
----
-Enumeration
 
 ```
 apt-get install tree
