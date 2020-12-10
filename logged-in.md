@@ -66,12 +66,12 @@ https://stackoverflow.com/questions/32313553/what-does-a-colon-mean-on-a-directo
 
 so that it will roughly translate to http://xxx/user/1 if the user id is 1
 
-
 however we still need one more level of directory shown by the code earlier in app.js
 which translate to /api/user/:userId
 
 ![image](https://user-images.githubusercontent.com/32186957/101723071-8436b900-3ae6-11eb-8d3f-09e8feddba12.png)
 
+This is the http get request for the correct call
 ```
 http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:41061/api/user/1
 ```
