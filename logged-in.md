@@ -31,6 +31,7 @@ grep -rn "api" .
 
 We know that the vector is api, lets check where the api are located, the "app.js" file looks promising
 
+![image](https://user-images.githubusercontent.com/32186957/101722550-716fb480-3ae5-11eb-90f3-62c77d62ffa3.png)
 
 ```
 subl app.js
