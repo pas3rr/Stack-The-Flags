@@ -40,6 +40,7 @@ subl app.js
 I prefer sublime for simple editing, you can use any other command like gedit.  Here we can see that 
 for app.js to work, we would need the reoutes/api.js file. require in js works like import in python
 
+![image](https://user-images.githubusercontent.com/32186957/101722708-c7445c80-3ae5-11eb-9186-8bb1ce642f95.png)
 
 ```
 subl ./routes/api.js
@@ -48,15 +49,27 @@ subl ./routes/api.js
 Here the very interesting things we can see for the api call is the router.get is equivalent to a get request function
 for the path /user/:userId which the async function takes in two parameter req and res (short for request and response)
 
-it will assign the variable user by calling the User.findByPK function which takes in another two parameters 
+![image](https://user-images.githubusercontent.com/32186957/101722737-d62b0f00-3ae5-11eb-85cc-a27dac1380be.png)
 
+it will assign the variable user by calling the User.findByPK function which takes in another two parameters 
+1. req.params.userId
+2. { "attributes": ["username"] } which is a dictionary pair with the keypair "username"
 
 and return
+
+res.json(user), which is the user 
 
  at this point of time we can use burp to see if we make this API call, however the colon itself means something within JS express, it its actually an URL parameters
 https://stackoverflow.com/questions/32313553/what-does-a-colon-mean-on-a-directory-in-node-js
 
+![image](https://user-images.githubusercontent.com/32186957/101723038-6ec18f00-3ae6-11eb-89a9-8f746068db72.png)
+
 so that it will roughly translate  to http://xxx/user/1 if the user id is 1
+
+![image](https://user-images.githubusercontent.com/32186957/101723071-8436b900-3ae6-11eb-8d3f-09e8feddba12.png)
+
+
+
 
 ```
 http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:41061/api/user/1
