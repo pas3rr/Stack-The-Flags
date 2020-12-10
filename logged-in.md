@@ -47,7 +47,7 @@ subl ./routes/api.js
 ```
 
 Here the very interesting things we can see for the api call is the router.get is equivalent to a get request function
-for the path /user/:userId which the async function takes in two parameter req and res (short for request and response)
+on the path /user/:userId, next the async function takes in two parameter req and res (short for request and response)
 
 ![image](https://user-images.githubusercontent.com/32186957/101722737-d62b0f00-3ae5-11eb-85cc-a27dac1380be.png)
 
