@@ -22,6 +22,8 @@ tree -L 3
 We will start with understanding the basic structure of the folder at basic level, this give us a idea of how's the folder structure and 
 where some of the key files are located. 
 
+![image](https://user-images.githubusercontent.com/32186957/101722233-bfd08380-3ae4-11eb-9a96-203aa0dabb55.png)
+
 
 ```
 grep -rn "api" .
