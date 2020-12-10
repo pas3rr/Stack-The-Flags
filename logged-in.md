@@ -108,7 +108,7 @@ From the validators.js file we can see that the function loginValidator checks f
 
 
 This information is interesting for us to craft a burp request to see if we are on the correct vectors
-/api/login with a post request will be the URL to call the api
+/api/login with a post request to call the api
 
 ```
 POST 
