@@ -136,10 +136,10 @@ try to use a invalid parameters such as just username without password.
 
 ![image](https://user-images.githubusercontent.com/32186957/101723855-24411200-3ae8-11eb-9a90-f4917f125d33.png)
 
+![image](https://user-images.githubusercontent.com/32186957/101723886-3753e200-3ae8-11eb-8554-aa7ed219fdaa.png)
+
 localAuthenticator function is the last which we try to understand, basically it let you  authenticate using a username and password in your Node.js applications
 http://www.passportjs.org/packages/passport-local/
-
-![image](https://user-images.githubusercontent.com/32186957/101723886-3753e200-3ae8-11eb-8554-aa7ed219fdaa.png)
 
 
 Here we understand that the logic is that if there is any err, it will return a 401 not authorized message which we see earlier. So right here at the end of all the 
