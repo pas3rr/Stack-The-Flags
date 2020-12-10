@@ -7,11 +7,6 @@ It looks like COViD's mobile application is connecting to this API! Fortunately,
 ## COMMENT
 As this looks like a challenge for source code review, we will try to adapt some of the OSWE methodology in reviewing the application flaws. 
 
-## Skill Required 
-JS basic syntax
-API endpoint 
-
----
 
 ```
 apt-get install tree
